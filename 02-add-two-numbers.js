@@ -1,9 +1,4 @@
 "use strict";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 1a6613019c0952b13308462fe4b8280400781230
 class ListNode {
     constructor(val, next) {
         this.val = (val === undefined ? 0 : val);
@@ -47,7 +42,3 @@ const reverso = (l1, l2) => {
     console.log(typeof algo);
     return algo;
 };
-<<<<<<< HEAD
->>>>>>> 1a6613019c0952b13308462fe4b8280400781230
-=======
->>>>>>> 1a6613019c0952b13308462fe4b8280400781230
