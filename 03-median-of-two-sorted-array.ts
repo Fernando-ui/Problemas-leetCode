@@ -28,29 +28,28 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
         console.log('es par');
         
         return resultadoPar;
-        
-        
     }else{
         if(arrayOrdenado.length <= 1){
             return +arrayOrdenado[0];
         }
-        impar = +arrayOrdenado[arrayOrdenado.length - 1];
-        console.log(impar,'valor del impar');
-        let imparPosicion = Math.floor(impar/2);
-        console.log('es impar');
-        console.log(Math.floor(impar/2), 'Esto me daria la posicion del valor de enmedio');
+        impar = arrayOrdenado.length;
+        console.log(impar);
         
-        console.log( +arrayOrdenado[imparPosicion],'resultado de todo');
+        let imparPosicion = Math.floor(impar/2);
+        console.log(imparPosicion,'posicion en medio');
+        
+        
         
         return +arrayOrdenado[imparPosicion];
 
         // TODO EN impar tiene que regresar el valor de enmedio
+        // TODO Colocar el numero de enmedio cuando es impar no tomar el valor que tiene en medio
         
     }
 };
 
-console.log(findMedianSortedArrays([1,2],[3,4,5]));
-
+console.log(findMedianSortedArrays([4,5,6,8,9],[]));
+// * 6 
 
 const numeros = [1,3,0];
 // let respuesta = numeros.sort(function(a, b){return a - b});
