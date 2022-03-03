@@ -5,7 +5,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
     let arrayOrdenado = arrCompleto.flat() ;
     arrayOrdenado = arrayOrdenado.sort(function(a:any, b:any){return a - b});
-    console.log(arrayOrdenado);
 
 
     let par:number | null = null;
@@ -29,12 +28,17 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
         
         
     }else{
+        if(arrayOrdenado.length <= 1){
+            return +arrayOrdenado[0];
+        }
+        impar = +arrayOrdenado[arrayOrdenado.length - 1];
         console.log('es impar');
+        return Math.ceil(impar / 2);
+        
     }
-    return 2;
 };
 
-console.log(findMedianSortedArrays([1,2],[3,4]));
+console.log(findMedianSortedArrays([1,3],[2]));
 
 
 const numeros = [1,3,0];
